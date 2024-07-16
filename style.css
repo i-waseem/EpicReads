@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    border: border-box;
+}
+
+.navbar {
+    height: 100px;
+    background-color: #ffe9d9;
+    color: black;
+}

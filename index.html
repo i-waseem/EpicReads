@@ -9,14 +9,29 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-
-            <div class="title-name">
-            <h1>EpicReads</h1>
-            <div class="add-icon">
-                <i class="fa-solid fa-book-open-reader"></i>
+        <div class="navbar"> <!-- Parent navbar div -->
+            <!-- Child 1 -->
+            <div class="title-container"> <!-- Container for title and icon -->
+                <!-- Child 1.1 -->
+                <div class="add-icon"> <!-- Container for icon -->
+                    <i class="fa-solid fa-book-open-reader"></i> <!-- Icon -->
+                </div>
+                <!-- Child 1.2 -->
+                <h1 class="title-name">EpicReads</h1> <!-- Title -->
             </div>
-        </div>
+
+            <div class="search-bar">  <!-- Container for search bar -->
+                    <div class="search-category">
+                        <select>
+                            <option value="all">All</option>
+                            <!-- Add more options here if needed -->
+                        </select>
+                    </div>
+                    <input type="text" placeholder="Search EpicReads">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i> <!-- Search Icon -->
+                    </button>
+                </div>
         </div>
     </header>
 </body>

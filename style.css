@@ -1,18 +1,79 @@
+/* General styles */
 * {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    border: border-box;
+    box-sizing: border-box;
 }
 
+/* Navbar styles */
 .navbar {
-    height: 150px;
-    background-color: #ffe9d9;
-    color: black;
+    height: 190px; /* Increase height to add more space */
+    background-color: #faeadf;
     display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Centers content vertically within navbar */
+    justify-content: center; /* Centers content horizontally */
+    padding: 10px 0; /* Add padding for top and bottom, and 0 for left and right */
 }
 
-h1 {
-    font-size: 60px;
-    font-weight: normal;
+/* Title container styles */
+.title-container {
+    display: flex;
+    align-items: center; /* Vertically centers the title */
+    margin-bottom: 20px; /* Adds space between title and search bar */
+}
+
+/* Icon container styles */
+.add-icon {
+    display: flex;
+    align-items: center; /* Centers icon vertically */
+    justify-content: flex-end; /* Moves icon to the right */
+    font-size: 3rem; /* Set the icon font size to match the title */
+    margin-right: 10px; /* Adjust this value to position the icon closer to the title */
+}
+
+/* Title styles */
+.title-name {
+    font-size: 3rem; /* Increase font size */
+    font-weight: 400; /* Make font weight lighter */
+}
+
+/* Search bar styles */
+.search-bar {
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    width: 45%; /* Set a width for the search bar */
+    max-width: 800px; /* Optional: Limit the max width of the search bar */
+    margin-top: 15px; /* Add margin-top to create space between the title and search bar */
+}
+
+.search-category select {
+    border: none;
+    padding: 10px;
+    background-color: rgb(234, 217, 201);
+    outline: none;
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #fdb989;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-bar button i {
+    font-size: 1rem;
+    color: white;
 }

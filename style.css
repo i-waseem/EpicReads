@@ -56,14 +56,14 @@
     border: none;
     padding: 10px;
     background-color: rgb(234, 217, 201);
-    outline: none;
+    border: none;
 }
 
 .search-bar input[type="text"] {
     border: none;
     padding: 10px;
     flex-grow: 1;
-    outline: none;
+    border: none;
 }
 
 .search-bar button {
@@ -77,3 +77,31 @@
     font-size: 1rem;
     color: white;
 }
+
+.menu {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #2a6d7d; /* Adjust color as needed */
+    font-size: 1rem; /* Adjust font size as needed */
+    font-weight: 500;
+}
+

@@ -155,6 +155,12 @@
     display: block; /* Ensure hover effect covers the entire link area */
     padding: 4px; /* Padding for better visual appearance */
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Smooth transition for color, background, and font size */
+    display: flex;
+    align-items: center;
+}
+
+.top-left-menu a i {
+    margin-right: 5px; /* Space between icon and text */
 }
 
 /* Hover effect for top-left menu links */

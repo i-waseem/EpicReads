@@ -8,7 +8,7 @@
 /* Navbar styles */
 .navbar {
     height: 220px; /* Increase height to add more space */
-    background-color: #faeadf;
+    background-color: #faeadf; /* Background color for navbar */
     display: flex;
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Centers content vertically within navbar */
@@ -20,9 +20,8 @@
 .title-container {
     display: flex;
     align-items: center; /* Vertically centers the title */
-    margin-top: 50px;
+    margin-top: 50px; /* Adds space above the title */
     transform: translateY(0px); /* Moves the container down */
-
 }
 
 /* Icon container styles */
@@ -43,78 +42,85 @@
 /* Search bar styles */
 .search-bar {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-    background-color: white;
+    align-items: center; /* Center items vertically */
+    justify-content: space-evenly; /* Space out items evenly */
+    border: 1px solid #ccc; /* Border color and width */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow content */
+    background-color: white; /* Background color */
     width: 45%; /* Set a width for the search bar */
     max-width: 800px; /* Optional: Limit the max width of the search bar */
     margin-top: 15px; /* Add margin-top to create space between the title and search bar */
 }
 
+/* Dropdown category selector styles */
 .search-category select {
     border: none;
     padding: 10px;
-    background-color: rgb(234, 217, 201);
-    border: none;
-    outline: none;
+    background-color: rgb(234, 217, 201); /* Background color for dropdown */
+    outline: none; /* Remove default outline */
 }
 
+/* Search input field styles */
 .search-bar input[type="text"] {
     border: none;
     padding: 10px;
-    flex-grow: 1;
-    border: none;
-    outline: none;
+    flex-grow: 1; /* Expand input to fill available space */
+    outline: none; /* Remove default outline */
 }
 
+/* Search button styles */
 .search-bar button {
-    background-color: #fdb989;
+    background-color: #fdb989; /* Button background color */
     border: none;
     padding: 10px;
-    cursor: pointer;
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Search icon styles */
 .search-bar button i {
-    font-size: 1rem;
-    color: white;
+    font-size: 1rem; /* Icon font size */
+    color: white; /* Icon color */
 }
 
+/* Sub-navigation menu styles */
 .menu {
-    background-color: #fff;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #fff; /* Background color */
+    border-top: 1px solid #ccc; /* Top border */
+    border-bottom: 1px solid #ccc; /* Bottom border */
+    padding: 10px 0; /* Vertical padding */
+    text-align: center; /* Center text */
 }
 
+/* Sub-navigation list styles */
 .menu ul {
-    list-style: none;
+    list-style: none; /* Remove default list styling */
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center list items */
 }
 
+/* Sub-navigation list item styles */
 .menu li {
-    margin: 0 15px;
+    margin: 0 15px; /* Horizontal margin between items */
 }
 
+/* Sub-navigation link styles */
 .menu a {
     text-decoration: none;
-    color: #502001; /* Adjust color as needed */
-    font-size: 1.3rem; /* Adjust font size as needed */
-    font-weight: 500;
-    display: block; /* Ensures the hover effect covers the entire link area */
-    padding: 10px; /* Adds padding for better visual appearance */
+    color: #502001; /* Link color */
+    font-size: 1.3rem; /* Font size */
+    font-weight: 500; /* Font weight */
+    display: block; /* Ensure hover effect covers the entire link area */
+    padding: 10px; /* Padding for better visual appearance */
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Smooth transition for color, background, and font size */
 }
-/* Hover effect */
+
+/* Hover effect for sub-navigation links */
 .menu li:hover a {
-    background-color: #8a3801; /* Adjust the background color and opacity */
-    color: white; /* Change font color to white */
+    background-color: #8a3801; /* Background color on hover */
+    color: white; /* Font color on hover */
     font-size: 1.1rem; /* Increase font size on hover */
     border-radius: 5px; /* Optional: Add rounded corners to the box */
 }
@@ -126,32 +132,35 @@
     left: 10px; /* Adjust left position as needed */
 }
 
+/* Top-left menu list styles */
 .top-left-menu ul {
-    list-style: none;
+    list-style: none; /* Remove default list styling */
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-start; /* Align items to the start */
 }
 
+/* Top-left menu list item styles */
 .top-left-menu li {
     margin-right: 20px; /* Space between menu items */
 }
 
+/* Top-left menu link styles */
 .top-left-menu a {
     text-decoration: none;
-    color: #321501; /* Adjust color as needed */
-    font-size: 1.1rem; /* Adjust font size as needed */
-    font-weight: 500;
-    display: block; /* Ensures the hover effect covers the entire link area */
-    padding: 4px; /* Adds padding for better visual appearance */
+    color: #321501; /* Link color */
+    font-size: 1.1rem; /* Font size */
+    font-weight: 500; /* Font weight */
+    display: block; /* Ensure hover effect covers the entire link area */
+    padding: 4px; /* Padding for better visual appearance */
     transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Smooth transition for color, background, and font size */
 }
 
+/* Hover effect for top-left menu links */
 .top-left-menu a:hover {
-    background-color: #8a3801; /* Adjust the background color and opacity */
-    color: white; /* Change font color to white */
+    background-color: #8a3801; /* Background color on hover */
+    color: white; /* Font color on hover */
     font-size: 1.2rem; /* Increase font size on hover */
     border-radius: 5px; /* Optional: Add rounded corners to the box */
 }
-

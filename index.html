@@ -8,10 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Root element of the header section -->
     <header>
-        <div class="navbar"> <!-- Parent navbar div -->
+        <!-- Main navigation bar container (Parent) -->
+        <div class="navbar">
+            <!-- Top-left sub-menu (Child of navbar) -->
             <div class="top-left-menu">
+                <!-- Unordered list container for menu items (Parent of list items) -->
                 <ul>
+                    <!-- Individual menu items (Children of ul) -->
                     <li><a href="#">Shop Finder</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Blog</a></li>
@@ -20,31 +25,42 @@
                     <li><a href="#">Help</a></li>
                 </ul>
             </div>
-            <div class="title-container"> <!-- Container for title and icon -->
-                <!-- Child 1.1 -->
-                <div class="add-icon"> <!-- Container for icon -->
-                    <i class="fa-solid fa-book-open-reader"></i> <!-- Icon -->
+            <!-- Container for the main title and icon (Child of navbar) -->
+            <div class="title-container">
+                <!-- Container for the icon (Child of title-container) -->
+                <div class="add-icon">
+                    <!-- Icon element (Child of add-icon) -->
+                    <i class="fa-solid fa-book-open-reader"></i>
                 </div>
-                <!-- Child 1.2 -->
-                <h1 class="title-name">EpicReads</h1> <!-- Title -->
+                <!-- Main title element (Child of title-container) -->
+                <h1 class="title-name">EpicReads</h1>
             </div>
-
-            <div class="search-bar">  <!-- Container for search bar -->
-                    <div class="search-category">
-                        <select>
-                            <option value="all">All</option>
-                            <!-- Add more options here if needed -->
-                        </select>
-                    </div>
-                    <input type="text" placeholder="Search EpicReads">
-                    <button type="submit">
-                        <i class="fa-solid fa-magnifying-glass"></i> <!-- Search Icon -->
-                    </button>
+            <!-- Container for the search bar (Child of navbar) -->
+            <div class="search-bar">
+                <!-- Dropdown category selector (Child of search-bar) -->
+                <div class="search-category">
+                    <!-- Select element for categories (Child of search-category) -->
+                    <select>
+                        <option value="all">All</option>
+                        <!-- Additional options can be added here -->
+                    </select>
                 </div>
+                <!-- Input field for search queries (Child of search-bar) -->
+                <input type="text" placeholder="Search EpicReads">
+                <!-- Button to submit search queries (Child of search-bar) -->
+                <button type="submit">
+                    <!-- Search icon (Child of button) -->
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
         </div>
     </header>
-    <nav class="menu"> <!-- Sub-navigation -->
+
+    <!-- Sub-navigation menu (Sibling of header) -->
+    <nav class="menu">
+        <!-- Unordered list container for menu items (Parent of list items) -->
         <ul>
+            <!-- Individual menu items (Children of ul) -->
             <li><a href="#">NEW</a></li>
             <li><a href="#">GENRE</a></li>
             <li><a href="#">SPECIAL EDITIONS</a></li>

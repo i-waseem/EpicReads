@@ -226,7 +226,7 @@
     justify-content: space-evenly; /* Space out the book covers evenly */
     align-items: center; /* Align the book covers to the center */
     width: 100%; /* Ensure the container covers the screen horizontally */
-    height: 50vh; /* Let the height adjust automatically */
+    height: 350px; /* Let the height adjust automatically */
     padding: 10px; /* Optional: Add some padding */
     background-color: #2b1001; /* Background color for the container */
 }
@@ -234,10 +234,10 @@
 /* Individual book cover styles */
 .book-cover {
     width: 100%; /* Allow the width to adjust automatically */
-    background-size: cover; /* Ensure the image covers the entire div */
+    height: 320px;
+    background-size: contain; /* Ensure the image covers the entire div */
     background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    margin: 10px; /* Optional: Add some margin between the book covers */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */;
 }
 
 

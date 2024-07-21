@@ -160,11 +160,55 @@
 }
 
 .top-left-menu a i {
-    margin-right: 5px; /* Space between icon and text */
+    margin-right: 6px; /* Space between icon and text */
 }
 
 /* Hover effect for top-left menu links */
 .top-left-menu a:hover {
+    background-color: #8a3801; /* Background color on hover */
+    color: white; /* Font color on hover */
+    font-size: 1.2rem; /* Increase font size on hover */
+    border-radius: 5px; /* Optional: Add rounded corners to the box */
+}
+
+/* Top-right menu styles */
+.top-right-menu {
+    position: absolute; /* Position it within the navbar */
+    top: 10px; /* Adjust top position as needed */
+    right: 10px; /* Adjust right position as needed */
+}
+
+.top-right-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-right-menu li {
+    margin-left: 20px;
+}
+
+/* Top-left menu link styles */
+.top-right-menu a {
+    text-decoration: none;
+    color: #321501; /* Link color */
+    font-size: 1.1rem; /* Font size */
+    font-weight: 500; /* Font weight */
+    display: block; /* Ensure hover effect covers the entire link area */
+    padding: 4px; /* Padding for better visual appearance */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Smooth transition for color, background, and font size */
+    display: flex;
+    align-items: center;
+}
+
+.top-right-menu a i {
+    margin-right: 6px; /* Space between icon and text */
+}
+
+/* Hover effect for top-right menu links */
+.top-right-menu a:hover {
     background-color: #8a3801; /* Background color on hover */
     color: white; /* Font color on hover */
     font-size: 1.2rem; /* Increase font size on hover */

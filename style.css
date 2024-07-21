@@ -84,7 +84,7 @@
 
 /* Search icon styles */
 .search-bar button i {
-    font-size: 1rem; /* Icon font size */
+    font-size: 1.1rem; /* Icon font size */
     color: white; /* Icon color */
 }
 
@@ -239,6 +239,57 @@
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */;
 }
+
+/* Suggestions section */
+.suggestions {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.suggestions-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #3e2723;
+    margin-bottom: 20px;
+}
+
+.suggestions-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.suggestion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(234, 221, 209);
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.suggestion-item .icon {
+    font-size: 3.5rem; /* Adjust the icon size as needed */
+    color: #3e2723; /* Adjust the icon color as needed */
+    margin-bottom: 10px;
+}
+
+.suggestion-item p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #3e2723;
+    margin-top: 5px;
+}
+
+.suggestion-item .icon:hover {
+    font-size: 5rem; /* Increase font size on hover */
+}
+
 
 
 

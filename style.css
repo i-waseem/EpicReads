@@ -7,180 +7,163 @@
 
 /* Navbar styles */
 .navbar {
-    height: 220px; /* Increase height to add more space */
-    background-color: #faeadf; /* Background color for navbar */
+    height: 220px;
+    background-color: #faeadf;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Centers content vertically within navbar */
-    justify-content: center; /* Centers content horizontally */
-    padding: 10px 0; /* Add padding for top and bottom, and 0 for left and right */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
 }
 
-/* Title container styles */
 .title-container {
     display: flex;
-    align-items: center; /* Vertically centers the title */
-    margin-top: 50px; /* Adds space above the title */
-    transform: translateY(0px); /* Moves the container down */
+    align-items: center;
+    margin-top: 50px;
+    transform: translateY(0px);
 }
 
-/* Icon container styles */
 .add-icon {
     display: flex;
-    align-items: center; /* Centers icon vertically */
-    justify-content: flex-end; /* Moves icon to the right */
-    font-size: 4rem; /* Set the icon font size to match the title */
-    margin-right: 10px; /* Adjust this value to position the icon closer to the title */
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 4rem;
+    margin-right: 10px;
 }
 
-/* Title styles */
 .title-name {
-    font-size: 4rem; /* Increase font size */
-    font-weight: 300; /* Make font weight lighter */
+    font-size: 4rem;
+    font-weight: 300;
 }
 
 /* Search bar styles */
 .search-bar {
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-evenly; /* Space out items evenly */
-    border: 1px solid #ccc; /* Border color and width */
-    border-radius: 5px; /* Rounded corners */
-    overflow: hidden; /* Hide overflow content */
-    background-color: white; /* Background color */
-    width: 45%; /* Set a width for the search bar */
-    max-width: 800px; /* Optional: Limit the max width of the search bar */
-    margin-top: 15px; /* Add margin-top to create space between the title and search bar */
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    width: 45%;
+    max-width: 800px;
+    margin-top: 15px;
 }
 
-/* Dropdown category selector styles */
 .search-category select {
     border: none;
     padding: 10px;
-    background-color: rgb(234, 217, 201); /* Background color for dropdown */
-    outline: none; /* Remove default outline */
-    transform: scale(1.2); /* Scale up the text */    
+    background-color: rgb(234, 217, 201);
+    outline: none;
+    transform: scale(1.2);    
 }
 
-/* Search input field styles */
 .search-bar input[type="text"] {
     border: none;
     padding: 10px;
-    flex-grow: 1; /* Expand input to fill available space */
-    outline: none; /* Remove default outline */
+    flex-grow: 1;
+    outline: none;
     font-size: 1.1rem;
-    
 }
 
-/* Search button styles */
 .search-bar button {
-    background-color: #fdb989; /* Button background color */
+    background-color: #fdb989;
     border: none;
     padding: 10px;
-    cursor: pointer; /* Pointer cursor on hover */
-    transform: scale(1.2); /* Scale up the text */    
-
+    cursor: pointer;
+    transform: scale(1.2);    
 }
 
-/* Search icon styles */
 .search-bar button i {
-    font-size: 1.1rem; /* Icon font size */
-    color: white; /* Icon color */
+    font-size: 1.1rem;
+    color: white;
 }
 
 /* Sub-navigation menu styles */
 .menu {
-    background-color: #fff; /* Background color */
-    border-top: 1px solid #ccc; /* Top border */
-    border-bottom: 1px solid #ccc; /* Bottom border */
-    padding: 10px 0; /* Vertical padding */
-    text-align: center; /* Center text */
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Sub-navigation list styles */
 .menu ul {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Center list items */
+    justify-content: center;
 }
 
-/* Sub-navigation list item styles */
 .menu li {
-    margin: 0 15px; /* Horizontal margin between items */
+    margin: 0 15px;
 }
 
-/* Sub-navigation link styles */
 .menu a {
     text-decoration: none;
-    color: #502001; /* Link color */
-    font-size: 1.3rem; /* Font size */
-    font-weight: 500; /* Font weight */
-    display: block; /* Ensure hover effect covers the entire link area */
-    padding: 10px; /* Padding for better visual appearance */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Smooth transition for color, background, and font size */
+    color: #502001;
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: block;
+    padding: 10px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out;
 }
 
-/* Hover effect for sub-navigation links */
 .menu li:hover a {
-    background-color: #8a3801; /* Background color on hover */
-    color: white; /* Font color on hover */
-    font-size: 1.1rem; /* Increase font size on hover */
-    border-radius: 5px; /* Optional: Add rounded corners to the box */
+    background-color: #8a3801;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
 }
 
 /* Top-left menu styles */
 .top-left-menu {
-    position: absolute; /* Position it within the navbar */
-    top: 10px; /* Adjust top position as needed */
-    left: 10px; /* Adjust left position as needed */
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
-/* Top-left menu list styles */
 .top-left-menu ul {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start; /* Align items to the start */
+    justify-content: flex-start;
 }
 
-/* Top-left menu list item styles */
 .top-left-menu li {
-    margin-right: 20px; /* Space between menu items */
+    margin-right: 20px;
 }
 
-/* Top-left menu link styles */
 .top-left-menu a {
     text-decoration: none;
-    color: #321501; /* Link color */
-    font-size: 1.1rem; /* Font size */
-    font-weight: 500; /* Font weight */
-    display: block; /* Ensure hover effect covers the entire link area */
-    padding: 4px; /* Padding for better visual appearance */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Smooth transition for color, background, and font size */
+    color: #321501;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    padding: 4px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out;
     display: flex;
     align-items: center;
 }
 
 .top-left-menu a i {
-    margin-right: 6px; /* Space between icon and text */
+    margin-right: 6px;
 }
 
-/* Hover effect for top-left menu links */
 .top-left-menu a:hover {
-    background-color: #8a3801; /* Background color on hover */
-    color: white; /* Font color on hover */
-    font-size: 1.2rem; /* Increase font size on hover */
-    border-radius: 5px; /* Optional: Add rounded corners to the box */
+    background-color: #8a3801;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
 }
 
 /* Top-right menu styles */
 .top-right-menu {
-    position: absolute; /* Position it within the navbar */
-    top: 10px; /* Adjust top position as needed */
-    right: 10px; /* Adjust right position as needed */
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
 
 .top-right-menu ul {
@@ -195,55 +178,56 @@
     margin-left: 20px;
 }
 
-/* Top-left menu link styles */
 .top-right-menu a {
     text-decoration: none;
-    color: #321501; /* Link color */
-    font-size: 1.1rem; /* Font size */
-    font-weight: 500; /* Font weight */
-    display: block; /* Ensure hover effect covers the entire link area */
-    padding: 4px; /* Padding for better visual appearance */
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out; /* Smooth transition for color, background, and font size */
+    color: #321501;
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    padding: 4px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, font-size 0.3s ease-in-out;
     display: flex;
     align-items: center;
 }
 
 .top-right-menu a i {
-    margin-right: 6px; /* Space between icon and text */
+    margin-right: 6px;
 }
 
-/* Hover effect for top-right menu links */
 .top-right-menu a:hover {
-    background-color: #8a3801; /* Background color on hover */
-    color: white; /* Font color on hover */
-    font-size: 1.2rem; /* Increase font size on hover */
-    border-radius: 5px; /* Optional: Add rounded corners to the box */
+    background-color: #8a3801;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
 }
 
 /* Container for book covers */
 .book-covers-container {
-    display: flex; /* Use flexbox to layout the children */
-    justify-content: space-evenly; /* Space out the book covers evenly */
-    align-items: center; /* Align the book covers to the center */
-    width: 100%; /* Ensure the container covers the screen horizontally */
-    height: 350px; /* Let the height adjust automatically */
-    padding: 10px; /* Optional: Add some padding */
-    background-color: #2b1001; /* Background color for the container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #2b1001;
+    gap: 10px; /* Added gap for better spacing */
 }
 
-/* Individual book cover styles */
 .book-cover {
-    width: 100%; /* Allow the width to adjust automatically */
-    height: 320px;
-    background-size: contain; /* Ensure the image covers the entire div */
-    background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */;
+    flex: 1 1 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px 0;
 }
 
 /* Suggestions section */
 .suggestions {
     text-align: center;
     margin: 40px 0;
+    background-color: white;
 }
 
 .suggestions-title {
@@ -252,6 +236,7 @@
     font-weight: 400;
     color: #3e2723;
     margin-bottom: 20px;
+    font-style: italic;
 }
 
 .suggestions-container {
@@ -267,14 +252,14 @@
     align-items: center;
     width: 150px;
     height: 150px;
-    background-color: rgb(234, 221, 209);
+    background-color: rgb(241, 230, 219);
     justify-content: center;
     border-radius: 50%;
 }
 
 .suggestion-item .icon {
-    font-size: 3.5rem; /* Adjust the icon size as needed */
-    color: #3e2723; /* Adjust the icon color as needed */
+    font-size: 3.5rem;
+    color: #3e2723;
     margin-bottom: 10px;
 }
 
@@ -287,9 +272,88 @@
 }
 
 .suggestion-item .icon:hover {
-    font-size: 5rem; /* Increase font size on hover */
+    font-size: 5rem;
 }
 
+/* Trending section */
+.trend {
+    text-align: center;
+    margin: 40px 0;
+    background-color: white;
+    padding: 20px 0;
+}
 
+.trend h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c5f2d;
+    margin-bottom: 20px;
+    font-style: italic;
+}
 
+.trend-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
+.trend-container {
+    flex: 1 1 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.trend-books {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+}
+
+.book-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.book-info p {
+    margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .trend-container, .book-cover {
+        flex: 1 1 calc(25% - 20px); /* Adjust for four items per row */
+        max-width: calc(25% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .trend-container, .book-cover {
+        flex: 1 1 calc(33.33% - 20px); /* Adjust for three items per row */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .trend-container, .book-cover {
+        flex: 1 1 calc(50% - 20px); /* Adjust for two items per row */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .trend-container, .book-cover {
+        flex: 1 1 100%; /* Adjust for one item per row */
+        max-width: 100%;
+    }
+}

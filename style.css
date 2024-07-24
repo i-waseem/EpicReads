@@ -312,6 +312,8 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    position: relative; /* Added to position the heart icon */
+    
 }
 
 .trend-books {
@@ -321,6 +323,7 @@
     background-position: center;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
+    position: relative; /* Added to position the heart icon */
 }
 
 .book-info {
@@ -338,17 +341,49 @@
     color: #2b1001;
 }
 
-.para1 a:hover {
+.para1 a:hover, .para2 a:hover {
     text-decoration: underline;
     }
 
 .para2 a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #8a3801;
     text-transform:uppercase;
 }
 
+.heart-icon {
+    position: absolute;
+    top: 17px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px solid green; /* Adjust border color as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px; /* Adjust size as needed */
+    height: 10px; /* Adjust size as needed */
+}
+
+.heart-icon i {
+    color: #be520b; /* Adjust icon color as needed */
+    font-size: 3.5rem; /* Adjust size as needed */
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: grey;
+    margin-right: 10px; /* Adds some space between the original and discounted price */
+    font-size: 1.05rem;
+}
+
+.discounted-price {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
 /* Responsive design */
 @media (max-width: 1200px) {
     .trend-container, .book-cover {

@@ -365,83 +365,138 @@
     font-size: 1.2rem;
 }
 
-/* Responsive design */
-@media (max-width: 1200px) {
-    .trend-container, .book-cover {
-        flex: 1 1 calc(25% - 20px); /* Adjust for four items per row */
-        max-width: calc(25% - 20px);
-    }
-
-    .suggestion-item {
-        width: 120px;
-        height: 120px;
-    }
-
-    .suggestion-item .icon {
-        font-size: 2.8rem;
-    }
-
-    .suggestion-item p {
-        font-size: 1rem;
-    }
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #faeadf;
 }
 
-@media (max-width: 992px) {
-    .trend-container, .book-cover {
-        flex: 1 1 calc(33.33% - 20px); /* Adjust for three items per row */
-        max-width: calc(33.33% - 20px);
-    }
-
-    .suggestion-item {
-        width: 100px;
-        height: 100px;
-    }
-
-    .suggestion-item .icon {
-        font-size: 2.2rem;
-    }
-
-    .suggestion-item p {
-        font-size: 0.9rem;
-    }
+.foot-panel1 {
+    flex: 2;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b1001;
 }
 
-@media (max-width: 768px) {
-    .trend-container, .book-cover {
-        flex: 1 1 calc(50% - 20px); /* Adjust for two items per row */
-        max-width: calc(50% - 20px);
-    }
-
-    .suggestion-item {
-        width: 80px;
-        height: 80px;
-    }
-
-    .suggestion-item .icon {
-        font-size: 1.8rem;
-    }
-
-    .suggestion-item p {
-        font-size: 0.8rem;
-    }
+.foot-panel1 p {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin: 0;
 }
 
-@media (max-width: 576px) {
-    .trend-container, .book-cover {
-        flex: 1 1 100%; /* Adjust for one item per row */
-        max-width: 100%;
-    }
+.foot-panel1 a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #8a3801;
+    text-transform: uppercase;
+}
 
-    .suggestion-item {
-        width: 60px;
-        height: 60px;
-    }
+.foot-panel1 a:hover {
+    text-decoration: underline;
+}
 
-    .suggestion-item .icon {
-        font-size: 1.5rem;
-    }
+.social-media {
+    margin-top: 10px;
+}
 
-    .suggestion-item p {
-        font-size: 0.7rem;
-    }
+.social-media p {
+    margin-bottom: 15px;
+    text-transform: none;
+    font-size: 1.4rem;
+    color: #2b1001;
+}
+
+.social-media a {
+    margin: 0 10px;
+    font-size: 2.5rem;
+    color: #8a3801;
+}
+
+.social-media a:hover {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, font-size 0.15s ease-in-out;
+    font-size: 2.7rem;
+    color: #502001;
+}
+
+.footer-legal p {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.footer-legal a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #8a3801;
+    text-transform: capitalize;
+}
+
+.foot-panel2 {
+    align-items: center;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #2b1001;
+}
+
+.news-updates {
+    font-size: 1.4rem;
+}
+
+.email-prompt {
+    font-size: 1.3rem;
+    color: #3e2723;
+}
+
+.foot-panel2 p {
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.foot-panel2 input[type="text"] {
+    margin-top: 10px;
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Centering the text */
+    font-size: 1rem;
+}
+
+.foot-panel2 input[type="checkbox"] {
+    margin: 10px 0;
+}
+
+.foot-panel2 label {
+    font-size: 1.1rem;
+    text-transform: none;
+    color: #3e2723;
+}
+
+.foot-panel2 input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    width: 150px; /* Set a fixed width for the button */
+    background-color: #8a3801;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.foot-panel2 input[type="submit"]:hover {
+    background-color:#502001
+}
+
+/* Placeholder styles */
+.foot-panel2 input[type="text"]::placeholder {
+    text-align: center; /* Centering the placeholder text */
+    display: block; /* Ensuring the placeholder takes up block level */
+    width: 100%; /* Ensuring the placeholder takes full width */
 }
